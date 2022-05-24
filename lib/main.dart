@@ -7,7 +7,10 @@ import 'package:textfieldnavigate/custom.dart';
 import 'package:textfieldnavigate/customtextfield.dart';
 import 'package:textfieldnavigate/firstscreen.dart';
 import 'package:textfieldnavigate/futter_8_9_class/counter_app.dart';
+import 'package:textfieldnavigate/futter_8_9_class/drop_down.dart';
 import 'package:textfieldnavigate/futter_8_9_class/list_view.dart';
+import 'package:textfieldnavigate/futter_8_9_class/locations_list.dart';
+import 'package:textfieldnavigate/futter_8_9_class/register_page.dart';
 import 'package:textfieldnavigate/hospital_list_post.dart';
 import 'package:textfieldnavigate/login.dart';
 import 'package:textfieldnavigate/maps.dart';
@@ -39,12 +42,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: "/listviewBuilder",
+      initialRoute: "/dropDownd",
       routes: {
         "/getStarted": (context) => Firstsreen(),
         "/counter": (context) => CounterApp(),
         "/listview": (context) => ListViewDemo(),
         "/listviewBuilder": (context) => ListViewBuilder(),
+        "/register": (context) => RegisterApp(),
+        "/locations": (context) => LocationList(),
+        "/dropDownd": (context) => DropDownWidget(),
 
         //CounterApp
         //ListViewBuilder

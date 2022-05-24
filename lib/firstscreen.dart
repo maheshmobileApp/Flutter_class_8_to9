@@ -32,9 +32,7 @@ class _FirstsreenState extends State<Firstsreen> {
                     TextStyle(color: Colors.green, fontWeight: FontWeight.w600),
                 keyboardType: TextInputType.name,
                 controller: _nameController,
-                onChanged: (value) {
-
-                },
+                onChanged: (value) {},
                 validator: (value) {
                   if (value!.isEmpty) {
                     return "Please Enter Value";
@@ -75,7 +73,11 @@ class _FirstsreenState extends State<Firstsreen> {
             ),
             TextButton(
                 onPressed: () {
-                  final isValid = _formKey.currentState?.validate();
+                  Navigator.pushNamed(context, "/counter",
+                      arguments: {"key": "test arugment value"});
+                  // final isValid = _formKey.currentState?.validate()
+                  // ;
+                  //1->2->3
                 },
                 child: Text("Submit"))
           ]),

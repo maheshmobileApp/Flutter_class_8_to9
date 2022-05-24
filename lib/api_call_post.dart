@@ -22,9 +22,7 @@ class _AppCallDemoWithPostTypeState extends State<AppCallDemoWithPostType> {
             return Card(
               child: Column(children: [
                 Text(bloodBandkInfo?.hiHospitalname ?? ""),
-                
-                
-                ]),
+              ]),
             );
           })),
     );
